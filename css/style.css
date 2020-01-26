@@ -1,0 +1,119 @@
+
+body
+{
+    width: 100%;
+    font-family: 'Lato', arial, sans-serif;
+    color: #444;
+    height: 100%;
+}
+.header{
+    position: fixed;
+    background-color: white;
+     width: 100%; 
+    /*box-shadow: 0 0 4px rgba(0,0,0,0.4);*/
+    
+}
+.nav{  
+    box-sizing: border-box; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+.continer
+{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.delta-class
+{  
+    padding-top: 10px;
+    margin-left: 3px;
+    font-size:25px;
+    font-weight: bold;
+}
+/*
+.parent-taggle
+{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: auto;
+    
+}
+*/
+.div-nav{
+    width: 100%;
+    display: contents;
+
+    margin-top:12px;
+}
+.menu
+{
+    margin-top: inherit;
+}
+.menu a {
+    
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    line-height: 70px;
+    font-size:15px;
+    
+}
+
+label {
+    /*margin:auto;*/
+    font-size: 26px;
+    line-height: 70px;
+    /*height: 5px;*/
+    display: none;
+    background-color: white;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+   
+}
+
+#toggle {
+    display:none; 
+       
+}
+@media only screen and (max-width: 500px) {
+    label {
+       display: inline;
+        cursor: pointer;
+    }
+    
+    .menu {
+        text-align: left;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        margin: auto auto auto 20px;
+        text-align: left;
+        
+    }
+    .parent-taggle
+{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: auto;
+    
+    
+}
+.continer
+{
+    margin-top: auto;
+    margin-left: 20px;
+    margin-bottom: auto;
+}
+    #toggle:checked + * .menu {
+      display: flex;
+      flex-direction: column;
+    }
+    .header{
+        box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    }
+}
